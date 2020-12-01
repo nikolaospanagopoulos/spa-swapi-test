@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 
 
 import {Card} from 'react-bootstrap'
-import Films from '../pages/Films';
+
 
 const Person=({person})=>{
     const [showResults,setShowResults] = useState(false)
@@ -19,7 +19,6 @@ const Person=({person})=>{
             <p>gender:{person.gender}</p>
     <p>homeowrld : {person.homeworld}</p>
 
-            <h4></h4>
 
             <div onClick={()=>toggle()}>Films:
             <p> {showResults && person.films.length} </p>

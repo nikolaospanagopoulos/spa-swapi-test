@@ -1,6 +1,6 @@
 import React from 'react';
 import starwars from './starwarslogo.png'
-import {Card,CardImg} from 'react-bootstrap'
+import {CardImg} from 'react-bootstrap'
 import './logo.css'
 const Logo = () => {
     return ( 

@@ -1,12 +1,10 @@
 import React,{useState,useEffect} from 'react';
 import Logo from '../components/logo/logo'
 import axios from 'axios'
-import { CSVLink, CSVDownload } from "react-csv";
+import { CSVLink } from "react-csv";
 const Homescreen = () => {
     const [planets,setPlanets] = useState([])
-    const headers = {
-        'Access-Control-Allow-Origin': '*'
-    }
+    
     useEffect(()=>{
         const fetchPlanets = async() =>{
             const {data} = await axios.get('https://swapi.dev/api/planets?format=wookiee')

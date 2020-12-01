@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 
 
 import {Card} from 'react-bootstrap'
-import Films from '../pages/Films';
+
 
 const Movie=({film})=>{
     const [showResults,setShowResults] = useState(false)

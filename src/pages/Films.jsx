@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios'
 import Movie from '../components/Card'
 
-import { Row, Col } from 'react-bootstrap'
+
 const Films = () => {
     const [films,setFilms] = useState([])
    

@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios'
 import Person from '../components/PeopleCard'
 
-import { Row, Col } from 'react-bootstrap'
+
 const People= () => {
     const [people,setPeople] = useState([])
    
