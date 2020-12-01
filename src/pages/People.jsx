@@ -8,7 +8,7 @@ const People = () => {
 
   useEffect(() => {
     const fetchPeople = async () => {
-      const { data } = await axios.get("https://swapi.dev/api/people");
+      const { data } = await axios.get("//swapi.dev/api/people");
 
       setPeople(data.results);
       console.log(people);

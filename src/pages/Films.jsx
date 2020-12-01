@@ -9,7 +9,7 @@ const Films = () => {
    
     useEffect(()=>{
         const fetchMovies = async() =>{
-            const {data} = await axios.get('https://swapi.dev/api/films')
+            const {data} = await axios.get('//swapi.dev/api/films')
             setFilms(data.results)
         console.log(films)
         }

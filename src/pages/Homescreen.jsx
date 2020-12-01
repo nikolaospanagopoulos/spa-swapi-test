@@ -7,7 +7,7 @@ const Homescreen = () => {
     
     useEffect(()=>{
         const fetchPlanets = async() =>{
-            const {data} = await axios.get('https://swapi.dev/api/planets?format=wookiee')
+            const {data} = await axios.get('//swapi.dev/api/planets?format=wookiee')
             setPlanets(data)
         console.log(planets)
         }
