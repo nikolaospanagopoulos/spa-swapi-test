@@ -1,31 +1,41 @@
-import React,{useState,useEffect} from 'react';
-import axios from 'axios'
-import Person from '../components/PeopleCard'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Person from "../components/PeopleCard";
+import { Row, Col } from "react-bootstrap";
 
+const People = () => {
+  const [people, setPeople] = useState([]);
 
-const People= () => {
-    const [people,setPeople] = useState([])
-   
-    useEffect(()=>{
-        const fetchPeople = async() =>{
-            const {data} = await axios.get('https://swapi.dev/api/people')
-       
-            setPeople(data.results)
-        console.log(people)
-        }
-        fetchPeople()
-    },[people])
+  useEffect(() => {
+    const fetchPeople = async () => {
+      const { data } = await axios.get("https://swapi.dev/api/people");
 
+      setPeople(data.results);
+      console.log(people);
+    };
+    fetchPeople();
+  }, [people]);
 
-    return (
-        <div>
-            {people.map((person)=>{
-                return (
-                    <Person key={person.index} person={person}/>
-                )
-            })}
-        </div>
-    );
-}
- 
+  return (
+    <>
+      <h3 style={{ textAlign: "center" }}>Click on a card to know more!</h3>
+      <Row>
+        {people.map((person) => {
+          return (
+            <Col
+              className="align-items-stretch d-flex"
+              key={person.index}
+              sm={12}
+              md={6}
+              xl={4}
+            >
+              <Person person={person} />
+            </Col>
+          );
+        })}
+      </Row>
+    </>
+  );
+};
+
 export default People;

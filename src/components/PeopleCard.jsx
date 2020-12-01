@@ -10,8 +10,10 @@ const Person=({person})=>{
         setShowResults(showResults=>!showResults)
     }
     return(
-        <Card >
-           <h3> Movie Ttitle:{person.name}</h3>
+        <>
+        
+        <Card onClick={()=>toggle()} className="my-3 p-3 rounded" style={{cursor:'pointer'}}>
+           <h3> Character:{person.name}</h3>
             <p>height:{person.height}cm</p>
             <p>mass:{person.mass}kg</p>
             <p>hair{person.hair_color}</p>
@@ -49,6 +51,7 @@ const Person=({person})=>{
 
             </Card.Body>
         </Card>
+        </>
     )
 }
 
