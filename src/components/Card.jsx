@@ -11,7 +11,7 @@ const Movie=({film})=>{
     }
     return(
         <Card  className="my-3 p-3 rounded" style={{cursor:'pointer'}}>
-           <h3> Movie Ttitle:{film.title}</h3>
+           <h3> Movie Title:{film.title}</h3>
             <h4>Director: {film.director}</h4>
             <h4>Release Date: {film.release_date}</h4>
 
