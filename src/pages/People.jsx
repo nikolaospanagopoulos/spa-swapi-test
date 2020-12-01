@@ -11,10 +11,10 @@ const People = () => {
       const { data } = await axios.get("//swapi.dev/api/people");
 
       setPeople(data.results);
-      console.log(people);
+      
     };
     fetchPeople();
-  }, [people]);
+  }, []);
 
   return (
     <>

@@ -11,10 +11,10 @@ const Films = () => {
         const fetchMovies = async() =>{
             const {data} = await axios.get('//swapi.dev/api/films')
             setFilms(data.results)
-        console.log(films)
+        
         }
         fetchMovies()
-    },[films])
+    },[])
 
 
     return (

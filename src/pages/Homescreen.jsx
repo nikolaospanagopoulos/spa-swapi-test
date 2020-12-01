@@ -9,10 +9,10 @@ const Homescreen = () => {
         const fetchPlanets = async() =>{
             const {data} = await axios.get('//swapi.dev/api/planets?format=wookiee')
             setPlanets(data)
-        console.log(planets)
+        
         }
         fetchPlanets()
-    },[planets])
+    },[])
 
     const csvData = planets
     return (
