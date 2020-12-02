@@ -2,12 +2,17 @@
     position: relative;
     text-align: center;
     width: 25%;
-    left: 35%;
+    left: 35vw;
     
   }
   
-.subtitle{
-  color: white;
-  text-align: center;
-}
+
   
+@media only screen and (max-width: 600px){
+  .logo-container{
+    width: 50vw;
+    left: 25vw;
+    margin-top: 2rem;
+  }
+  
+}

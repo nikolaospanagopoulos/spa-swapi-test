@@ -1,6 +1,6 @@
 @font-face{
   font-family: 'starwars';
-  src: url('./StarJedi-DGRW.ttf');
+  src: url('./fonts/StarJedi-DGRW.ttf');
 }
 .title{
   font-family: 'starwars';
@@ -10,11 +10,22 @@
   margin-top: 3rem;
 }
 
+.subtitle{
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+
 .download{
   text-align: center;
   color: white;
   margin-top: 5rem;
   
+}
+
+.navbar-bootstrap {
+  background-color:transparent;
 }
 .download:hover{
   color: tan;
@@ -33,4 +44,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@media only screen and (max-width: 600px){
+  .navbar-bootstrap{
+    background-color:tan;
+    height: 100px;
+    
+  }
+  .title{
+    font-size: 1.2rem;
+  }
 }

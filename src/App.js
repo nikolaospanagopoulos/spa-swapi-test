@@ -5,7 +5,7 @@ import Homescreen from './pages/Homescreen'
 import Films from './pages/Films'
 import People from './pages/People'
 import Background from './components/background/background'
-import './App.css'
+
 function App() {
   return (
     <div >
