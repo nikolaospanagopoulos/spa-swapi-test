@@ -6,7 +6,7 @@ const Logo = () => {
     return ( 
         <div className='logo-container'>
             <CardImg  src={starwars} alt="star wars logo"/>
-            <h3> movies and people</h3>
+            <h3 className='subtitle'> movies and people</h3>
         </div>
      );
 }

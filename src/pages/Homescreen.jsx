@@ -19,8 +19,8 @@ const Homescreen = () => {
         <div>
             <Logo/>
 
-            <h3 style={{textAlign:'center',marginTop:'10rem'}}>You can visit the links on the navbar and see very detailed information about star wars movies. When you click on a resource it will explode!!! with information</h3>
-            <CSVLink data={csvData}><h5 style={{marginTop:'10rem'}}>Download planets in wookie language</h5></CSVLink>;
+            <h3 className='title'>You can visit the links on the navbar and see very detailed information about star wars movies. When you click on a resource it will explode with information!</h3>
+            <CSVLink data={csvData}><h5 className='download'>Download Planets in Wookie Language</h5></CSVLink>;
         </div>
     );
 }

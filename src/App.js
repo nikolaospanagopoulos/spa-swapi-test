@@ -4,14 +4,21 @@ import Header from './components/navbar/navbar'
 import Homescreen from './pages/Homescreen'
 import Films from './pages/Films'
 import People from './pages/People'
+import Background from './components/background/background'
+import './App.css'
 function App() {
   return (
-    <Router>
+    <div >
+    <Router >
+       
       <Header/>
       <Route path='/people' component={People} />
      <Route path='/films' component={Films} />
-     <Route path='/' component={Homescreen} exact/>
+     <Route path='/' component={Homescreen} exact />
+    
     </Router>
+     <Background/>
+     </div>
   );
 }
 

@@ -18,7 +18,7 @@ const People = () => {
 
   return (
     <>
-      <h3 style={{ textAlign: "center" }}>Click on a card to know more!</h3>
+      <h3 style={{ textAlign: "center" ,color:"white"}}>Click on a card to know more!</h3>
       <Row>
         {people.map((person) => {
           return (

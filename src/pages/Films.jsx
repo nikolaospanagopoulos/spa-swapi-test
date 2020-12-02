@@ -20,7 +20,7 @@ const Films = () => {
     return (
         <>
         <div>
-            <h3 style={{textAlign:"center"}}>Click on a card to know more!!</h3>
+            <h3 className='subtitle'>Click on a card to know more!!</h3>
         </div>
         <Row>
             {films.map((film)=>{
