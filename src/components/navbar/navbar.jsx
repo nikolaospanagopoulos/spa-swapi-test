@@ -5,7 +5,7 @@ import './navbar.css'
 const Header = () => {
   return (
     <header>
-      <Navbar  expand="lg" collapseOnSelect>
+      <Navbar>
       <Container>
       <Nav.Link href='/' onClick={() => window.location.href=`/`}> <h4 className='title-nav'>Home</h4>  </Nav.Link>
         
